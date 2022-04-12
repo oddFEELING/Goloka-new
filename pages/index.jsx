@@ -6,7 +6,7 @@ import useMobile from '../hooks/useMobile';
 import AOS from 'aos';
 import { Container, Main } from '../styles/Home.component';
 import Collector from '../components/collector/Collector';
-import Agent from '../components/agent/AGent';
+import Agent from '../components/agent/Agent';
 import Footer from '../components/footer/Footer';
 
 export default function Home() {
