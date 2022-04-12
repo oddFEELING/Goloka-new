@@ -9,7 +9,11 @@ const IconBox = React.memo(({ ...props }) => {
     props;
   return (
     <Container>
-      <IconSection data-aos={ic_aosData} data-aos-delay={ic_aosDelay}>
+      <IconSection
+        data-aos={ic_aosData}
+        data-aos-delay={ic_aosDelay}
+        data-aos-offset='100'
+      >
         {/* ====== back div */}
         <BackDiv className='back__div' />
 

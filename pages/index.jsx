@@ -7,6 +7,7 @@ import AOS from 'aos';
 import { Container, Main } from '../styles/Home.component';
 import Collector from '../components/collector/Collector';
 import Agent from '../components/agent/AGent';
+import Footer from '../components/footer/Footer';
 
 export default function Home() {
   const Mobile = useMobile();
@@ -16,6 +17,7 @@ export default function Home() {
     AOS.init({
       duration: 800,
       offset: 0,
+      disable: 'mobile',
       once: true,
     });
   });
@@ -32,6 +34,7 @@ export default function Home() {
         <Hero />
         <Collector />
         <Agent />
+        <Footer />
       </Main>
     </Container>
   );

@@ -6,7 +6,7 @@ export const Container = styled.section`
   display: flex;
   gap: 1vh;
   flex-direction: column;
-  padding: 7vh 15vw;
+  padding: 10vh 15vw;
 
   @media screen and (max-width: 800px) {
     padding: 7vh 8vw;

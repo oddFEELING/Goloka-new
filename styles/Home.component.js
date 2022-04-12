@@ -7,6 +7,5 @@ export const Main = styled.div`
   min-height: 800px;
   display: flex;
   flex-direction: column;
-  gap: 3vw;
   position: relative;
 `;

@@ -9,21 +9,25 @@ const Collector = React.memo(() => {
     {
       icon: `lucide:mouse-pointer-click`,
       title: `Sign Up`,
+      delay: 100,
       desc: `Take a few minutes to sign up. It's totally free!`,
     },
     {
       icon: `ion:create-outline`,
       title: `Create a Task`,
+      delay: 200,
       desc: `Create a task with detailed instructions.`,
     },
     {
       icon: `akar-icons:circle-check`,
       title: `Accept Completed Tasks`,
+      delay: 300,
       desc: `Review and accept completed tasks.`,
     },
     {
       icon: `bi:cash-coin`,
       title: `Payout`,
+      delay: 400,
       desc: `Authorize payments for accepted tasks.`,
     },
   ];
@@ -49,6 +53,8 @@ const Collector = React.memo(() => {
               title={data.title}
               desc={data.desc}
               icon={data.icon}
+              ic_aosDelay={data.delay}
+              ic_aosData='zoom-out'
             />
           );
         })}

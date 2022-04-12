@@ -6,7 +6,7 @@ export const Container = styled.section`
   display: flex;
   gap: 1vh;
   flex-direction: column;
-  padding: 7vh 15vw;
+  padding: 10vh 15vw;
   background-color: ${({ theme }) => theme.colors.lt_1};
 
   @media screen and (max-width: 800px) {

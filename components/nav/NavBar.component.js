@@ -115,7 +115,6 @@ export const MobileNavBox = styled.nav`
 
     &:hover {
       color: ${({ theme }) => theme.colors.pri};
-      font-size: ${({ theme }) => theme.fonts.size('md')};
     }
   }
 `;

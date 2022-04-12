@@ -21,7 +21,7 @@ const Component = styled.button`
   border-radius: 8px;
   background-color: ${({ bgColor }) => bgColor};
   font-family: ${({ theme }) => theme.fonts.sec};
-  font-size: ${({ theme }) => theme.fonts.fixed('sm')};
+  font-size: ${({ theme }) => theme.fonts.size('md')};
   transition: ${({ theme }) => theme.transitions.smooth};
 
   &:hover {
