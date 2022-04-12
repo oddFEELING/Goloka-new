@@ -2,7 +2,7 @@ import React from 'react';
 import IconBox from '../lib/icon_box/IconBox.component';
 import { Container, Tag, Title, Desc, StepArea } from './Agent.component';
 
-const Agent = React.memo(() => {
+const Agent = () => {
   const IconBoxData = [
     {
       icon: `lucide:mouse-pointer-click`,
@@ -59,6 +59,6 @@ const Agent = React.memo(() => {
       </StepArea>
     </Container>
   );
-});
+};
 
 export default Agent;

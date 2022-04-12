@@ -3,7 +3,7 @@ import { Icon } from '@iconify/react';
 import styled from 'styled-components';
 
 //=============================================>  Rendered component
-const IconBox = React.memo(({ ...props }) => {
+const IconBox = ({ ...props }) => {
   // ======= destructure props  -->
   const { icon, title, desc, aosData, aosDelay, ic_aosData, ic_aosDelay } =
     props;
@@ -28,7 +28,7 @@ const IconBox = React.memo(({ ...props }) => {
       <Desc>{desc}</Desc>
     </Container>
   );
-});
+};
 
 export default IconBox;
 

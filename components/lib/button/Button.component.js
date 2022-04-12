@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 //=============================================>  Render component
-const Button = React.memo(({ ...props }) => {
+const Button = ({ ...props }) => {
   // ======= destructure props -->
   const { bgColor, text, onClick } = props;
   return (
@@ -10,7 +10,7 @@ const Button = React.memo(({ ...props }) => {
       {text}
     </Component>
   );
-});
+};
 
 //=============================================>  Styled component
 const Component = styled.button`

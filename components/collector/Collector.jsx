@@ -4,7 +4,7 @@ import IconBox from '../lib/icon_box/IconBox.component';
 // ======= component import -->
 import { Container, Tag, Title, Desc, StepArea } from './Collector.component';
 
-const Collector = React.memo(() => {
+const Collector = () => {
   const IconBoxData = [
     {
       icon: `lucide:mouse-pointer-click`,
@@ -61,6 +61,6 @@ const Collector = React.memo(() => {
       </StepArea>
     </Container>
   );
-});
+};
 
 export default Collector;
