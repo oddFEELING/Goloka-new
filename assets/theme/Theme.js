@@ -6,6 +6,7 @@ const Theme = {
     lt_1: '#f3f4ff',
     lt_2: '#F4F7FF',
     lt_3: '#afb2b5',
+    lt_4: '#E2E2E2',
     dk_1: '#141711',
     dk_2: '#1e1e1e',
     dk_3: '#212B36',

@@ -23,9 +23,20 @@ export const LogoDiv = styled.div`
 
 // ======= text area -->
 export const Content = styled.p`
+  width: 45vw;
   font-family: ${({ theme }) => theme.fonts.sec};
   font-size: ${({ theme }) => theme.fonts.fixed('sm')};
-  color: ${({ theme }) => theme.alpha.lt_1(0.7)};
+  color: ${({ theme }) => theme.colors.lt_4};
+
+  /* small screen */
+  @media screen and (max-width: 800px) {
+    width: 100%;
+  }
+
+  /* medium screen */
+  @media screen and (max-width: 1200px) and (min-width: 800px) {
+    width: 70vw;
+  }
 `;
 
 // ======= social section -->
