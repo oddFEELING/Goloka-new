@@ -30,6 +30,8 @@ const Hero = () => {
           layout='fill'
           data-aos='fade-up'
           data-aos-duration='1500'
+          style={{ zIndex: 5 }}
+          priority
         />
         <DotBox
           sx={{ zIndex: '3', position: 'absolute', right: '0' }}

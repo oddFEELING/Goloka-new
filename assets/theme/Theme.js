@@ -12,15 +12,24 @@ const Theme = {
     success: '#13C296',
   },
   fonts: {
-    pri: `'Lato', sans-serif`,
+    pri: `'Inter', sans-serif`,
     sec: `'Roboto', sans-serif`,
     size: (level) => {
       if (level === 'xs') return 'clamp(.6rem,.75vw, .8rem )';
       if (level === 'sm') return 'clamp(.8rem, .85vw, 1rem)';
-      if (level === 'md') return 'clamp(.8rem, 1.1vw, 1.5rem)';
+      if (level === 'md') return 'clamp(.8rem, 1vw, 1.5rem)';
       if (level === 'lg') return 'clamp(1.3rem, 1.4vw, 2rem)';
-      if (level === 'xl') return 'clamp(1.5rem, 2.5vw, 5rem)';
+      if (level === 'xl') return 'clamp(1.5rem, 2.4vw, 5rem)';
       if (level === 'xxl') return 'clamp(2.5rem, 3vw, 10rem)';
+      return '1rem';
+    },
+    fixed: (level) => {
+      if (level === 'xs') return '.5rem';
+      if (level === 'sm') return '1rem';
+      if (level === 'md') return '1.4rem';
+      if (level === 'lg') return '1.8rem';
+      if (level === 'xl') return '3rem';
+      if (level === 'xxl') return '5rem';
       return '1rem';
     },
   },

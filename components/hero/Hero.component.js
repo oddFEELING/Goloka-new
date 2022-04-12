@@ -29,7 +29,7 @@ export const Textsection = styled.section`
 `;
 
 export const Title = styled.h1`
-  width: 40vw;
+  width: 45vw;
   font-weight: 900;
   letter-spacing: 1px;
   color: ${({ theme }) => theme.colors.lt_1};
