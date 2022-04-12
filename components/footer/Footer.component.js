@@ -24,6 +24,7 @@ export const LogoDiv = styled.div`
 // ======= text area -->
 export const Content = styled.p`
   width: 45vw;
+  z-index: 2;
   font-family: ${({ theme }) => theme.fonts.sec};
   font-size: ${({ theme }) => theme.fonts.fixed('sm')};
   color: ${({ theme }) => theme.colors.lt_4};
