@@ -3,7 +3,7 @@ import { css } from 'styled-components';
 
 export const Container = styled.header`
   width: 100%;
-  height: max(100vh, 600px);
+  height: max(100vh, 700px);
   display: flex;
   flex-direction: column-reverse;
   justify-content: space-between;
@@ -14,7 +14,7 @@ export const Container = styled.header`
 
   /* small screen */
   @media screen and (max-width: 800px) {
-    height: 70vh;
+    height: max(70vh, 700px);
   }
 `;
 
