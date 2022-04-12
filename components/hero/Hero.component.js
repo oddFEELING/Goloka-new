@@ -3,8 +3,7 @@ import { css } from 'styled-components';
 
 export const Container = styled.header`
   width: 100%;
-  height: 100vh;
-  min-height: 700px;
+  height: max(100vh, 600px);
   display: flex;
   flex-direction: column-reverse;
   justify-content: space-between;
@@ -17,6 +16,11 @@ export const Container = styled.header`
   @media screen and (max-width: 800px) {
     height: 70vh;
   }
+  /* small screen  landscape*/
+  @media screen and (max-width: 900px) and (orientation: landscape) {
+    height: 500px;
+    padding-top: 30vh;
+  }
 `;
 
 // ======= Text area -->
@@ -26,6 +30,11 @@ export const Textsection = styled.section`
   align-items: center;
   justify-content: center;
   gap: 2vh;
+
+  /* small screen  landscape*/
+  @media screen and (max-width: 900px) and (orientation: landscape) {
+    gap: 5vh;
+  }
 `;
 
 export const Title = styled.h1`
@@ -61,6 +70,10 @@ export const Desc = styled.h3`
   /* medium screen */
   @media screen and (max-width: 1024px) {
     width: 70%;
+  }
+  /* small screen  landscape*/
+  @media screen and (max-width: 900px) and (orientation: landscape) {
+    line-height: 5vh;
   }
 `;
 
@@ -104,7 +117,7 @@ export const ImageSection = styled.section`
 
   /* medium screen */
   @media screen and (min-width: 800px) and (max-width: 1200px) {
-    width: 70%;
+    width: 60%;
     height: 30vh;
   }
 `;

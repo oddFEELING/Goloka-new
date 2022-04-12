@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Container = styled.footer`
   width: 100%;
-  height: 40vh;
+  height: max(40vh, 300px);
   display: flex;
   gap: 4vh;
   padding: 2vh 5vw;
