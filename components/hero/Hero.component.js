@@ -16,11 +16,6 @@ export const Container = styled.header`
   @media screen and (max-width: 800px) {
     height: 70vh;
   }
-  /* small screen  landscape*/
-  @media screen and (max-width: 900px) and (orientation: landscape) {
-    height: 500px;
-    padding-top: 30vh;
-  }
 `;
 
 // ======= Text area -->
@@ -30,11 +25,6 @@ export const Textsection = styled.section`
   align-items: center;
   justify-content: center;
   gap: 2vh;
-
-  /* small screen  landscape*/
-  @media screen and (max-width: 900px) and (orientation: landscape) {
-    gap: 5vh;
-  }
 `;
 
 export const Title = styled.h1`
@@ -70,10 +60,6 @@ export const Desc = styled.h3`
   /* medium screen */
   @media screen and (max-width: 1024px) {
     width: 70%;
-  }
-  /* small screen  landscape*/
-  @media screen and (max-width: 900px) and (orientation: landscape) {
-    line-height: 5vh;
   }
 `;
 
