@@ -74,12 +74,18 @@ export const DesktopNav = styled.nav`
 // ======= mobile nav -->
 export const MobileNav = styled.span`
   width: 65px;
-  height: 50%;
+  height: 30%;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
   position: relative;
+
+  ${({ scrolled }) =>
+    scrolled &&
+    css`
+      height: 50%;
+    `}
 `;
 
 export const MobileNavBox = styled.nav`

@@ -46,7 +46,7 @@ const NavBar = () => {
       </ImageHolder>
 
       {isMobile ? (
-        <MobileNav>
+        <MobileNav scrolled={scrolled}>
           {/* ====== Mobile nav */}
           <Icon
             icon={menuIsOpen ? `ci:close-big` : `clarity:menu-line`}
