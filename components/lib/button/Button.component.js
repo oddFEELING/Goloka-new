@@ -14,7 +14,7 @@ const Button = React.memo(({ ...props }) => {
 
 //=============================================>  Styled component
 const Component = styled.button`
-  padding: 6% 17%;
+  padding: 2vh 30px;
   border: none;
   cursor: pointer;
   font-weight: 500;

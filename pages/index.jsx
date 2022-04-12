@@ -5,6 +5,8 @@ import NavBar from '../components/nav/NavBar';
 import useMobile from '../hooks/useMobile';
 import AOS from 'aos';
 import { Container, Main } from '../styles/Home.component';
+import Collector from '../components/collector/Collector';
+import Agent from '../components/agent/AGent';
 
 export default function Home() {
   const Mobile = useMobile();
@@ -14,6 +16,7 @@ export default function Home() {
     AOS.init({
       duration: 800,
       offset: 0,
+      once: true,
     });
   });
   return (
@@ -27,6 +30,8 @@ export default function Home() {
       <Main>
         <NavBar />
         <Hero />
+        <Collector />
+        <Agent />
       </Main>
     </Container>
   );

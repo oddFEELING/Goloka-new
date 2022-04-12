@@ -15,11 +15,11 @@ const Theme = {
     pri: `'Lato', sans-serif`,
     sec: `'Roboto', sans-serif`,
     size: (level) => {
-      if (level === 'xs') return 'clamp(.5rem,.7vw, .8rem )';
-      if (level === 'sm') return 'clamp(.7rem, .85vw, 1rem)';
-      if (level === 'md') return 'clamp(1rem, 1.1vw, 1.5rem)';
-      if (level === 'lg') return 'clamp(1.5rem, 1.4vw, 2rem)';
-      if (level === 'xl') return 'clamp(1.8rem, 2.5vw, 5rem)';
+      if (level === 'xs') return 'clamp(.6rem,.75vw, .8rem )';
+      if (level === 'sm') return 'clamp(.8rem, .85vw, 1rem)';
+      if (level === 'md') return 'clamp(.8rem, 1.1vw, 1.5rem)';
+      if (level === 'lg') return 'clamp(1.3rem, 1.4vw, 2rem)';
+      if (level === 'xl') return 'clamp(1.5rem, 2.5vw, 5rem)';
       if (level === 'xxl') return 'clamp(2.5rem, 3vw, 10rem)';
       return '1rem';
     },

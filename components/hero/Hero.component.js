@@ -4,7 +4,7 @@ import { css } from 'styled-components';
 export const Container = styled.header`
   width: 100%;
   height: 100vh;
-  min-height: 800px;
+  min-height: 700px;
   display: flex;
   flex-direction: column-reverse;
   justify-content: space-between;
@@ -12,6 +12,11 @@ export const Container = styled.header`
   padding-top: 20vh;
   text-align: center;
   background-color: ${({ theme }) => theme.colors.pri};
+
+  /* small screen */
+  @media screen and (max-width: 800px) {
+    height: 70vh;
+  }
 `;
 
 // ======= Text area -->
@@ -29,6 +34,16 @@ export const Title = styled.h1`
   letter-spacing: 1px;
   color: ${({ theme }) => theme.colors.lt_1};
   font-size: ${({ theme }) => theme.fonts.size('xl')};
+
+  /* snall screen */
+  @media screen and (max-width: 800px) {
+    width: 80%;
+  }
+
+  /* medium screen */
+  @media screen and (max-width: 1024px) {
+    width: 60%;
+  }
 `;
 
 export const Desc = styled.h3`
@@ -38,13 +53,22 @@ export const Desc = styled.h3`
   color: ${({ theme }) => theme.alpha.lt_1(0.7)};
   font-size: ${({ theme }) => theme.fonts.size('md')};
   font-family: ${({ theme }) => theme.fonts.sec};
+
+  /* small screen */
+  @media screen and (max-width: 800px) {
+    width: 90%;
+  }
+  /* medium screen */
+  @media screen and (max-width: 1024px) {
+    width: 70%;
+  }
 `;
 
 export const BtnSection = styled.section`
-  width: 50%;
+  width: 80%;
   display: flex;
   padding: 3vh;
-  gap: 1vh;
+  gap: 1.5vh;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
@@ -52,6 +76,16 @@ export const BtnSection = styled.section`
   p {
     color: ${({ theme }) => theme.alpha.lt_2(0.7)};
     font-size: ${({ theme }) => theme.fonts.size('xs')};
+  }
+
+  /* small screen */
+  @media screen and (max-width: 800px) {
+    width: 80%;
+  }
+
+  /* medium screen */
+  @media screen and (max-width: 1400px) {
+    width: 80%;
   }
 `;
 
@@ -61,4 +95,16 @@ export const ImageSection = styled.section`
   height: 35vh;
   position: relative;
   flex-shrink: 0;
+
+  /* small screen  */
+  @media screen and (max-width: 800px) {
+    width: 95%;
+    height: 20vh;
+  }
+
+  /* medium screen */
+  @media screen and (min-width: 800px) and (max-width: 1200px) {
+    width: 70%;
+    height: 30vh;
+  }
 `;
