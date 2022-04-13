@@ -49,13 +49,12 @@ const Hero = () => {
       <Textsection>
         {/* ====== title */}
         <Title data-aos='fade-up'>
-          On-demand Field Data Collection that Matters
+          Crowdsource your data collection in real-time
         </Title>
         {/* ====== description */}
         <Desc data-aos='fade-up'>
-          Goloka helps you digitize the offline world. Aggregate and analyze
-          offline data collected by field agents across your neighborhood, your
-          city, or even interstate.
+          Goloka connects you with reality on the ground. Track and transmit
+          offline data collected by thousands of community agents
         </Desc>
         {/* ====== button */}
         <BtnSection data-aos='fade-up'>

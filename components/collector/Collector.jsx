@@ -22,13 +22,13 @@ const Collector = () => {
       icon: `akar-icons:circle-check`,
       title: `Accept Completed Tasks`,
       delay: 300,
-      desc: `Review and accept completed tasks.`,
+      desc: `Review and accept completed task\.`,
     },
     {
       icon: `bi:cash-coin`,
       title: `Payout`,
       delay: 400,
-      desc: `Authorize payments for accepted tasks.`,
+      desc: `Authorise payments for accepted tasks.`,
     },
   ];
   return (
