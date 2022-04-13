@@ -23,6 +23,7 @@ const useMobile = () => {
     const agent = window.navigator.userAgent;
     const watcher = () => {
       if (window.innerWidth <= 800) return dispatch({ type: 'SMALL_SCREEN' });
+      if (window.innerWidth > 800) return dispatch({ type: 'NOT_MOBILE' });
       if (userAgentChecker(agent)) return dispatch({ type: 'MOBILE_AGENT' });
       return dispatch({ type: 'NOT_MOBILE' });
     };
