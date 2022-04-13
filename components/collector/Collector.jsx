@@ -20,15 +20,15 @@ const Collector = () => {
     },
     {
       icon: `akar-icons:circle-check`,
-      title: `Accept Completed Tasks`,
+      title: `Accept Completed Task`,
       delay: 300,
-      desc: `Review and accept completed task\.`,
+      desc: `Review and accept completed task.`,
     },
     {
       icon: `bi:cash-coin`,
       title: `Payout`,
       delay: 400,
-      desc: `Authorise payments for accepted tasks.`,
+      desc: `Authorise payments for accepted task.`,
     },
   ];
   return (
