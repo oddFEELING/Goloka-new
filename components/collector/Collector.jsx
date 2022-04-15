@@ -12,7 +12,7 @@ const Collector = () => {
   // ======= set coolector id -->
   useEffect(() => {
     set_collector(sc_collector);
-  }, [sc_collector]);
+  }, [set_collector, sc_collector]);
 
   const IconBoxData = [
     {
