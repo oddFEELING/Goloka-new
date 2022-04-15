@@ -10,7 +10,7 @@ const Agent = () => {
   // ======= set agent section id -->
   useEffect(() => {
     set_Agent(sc_agent);
-  }, []);
+  }, [sc_agent]);
   const IconBoxData = [
     {
       icon: `lucide:mouse-pointer-click`,
