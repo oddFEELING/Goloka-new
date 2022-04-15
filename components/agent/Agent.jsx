@@ -1,8 +1,16 @@
-import React from 'react';
+import React, { useId, useEffect } from 'react';
+import navStore from '../../global/nav.store';
 import IconBox from '../lib/icon_box/IconBox.component';
 import { Container, Tag, Title, Desc, StepArea } from './Agent.component';
 
 const Agent = () => {
+  const sc_agent = useId();
+  const set_Agent = navStore((state) => state.setAgent);
+
+  // ======= set agent section id -->
+  useEffect(() => {
+    set_Agent(sc_agent);
+  }, []);
   const IconBoxData = [
     {
       icon: `lucide:mouse-pointer-click`,
@@ -30,7 +38,7 @@ const Agent = () => {
     },
   ];
   return (
-    <Container>
+    <Container id={sc_agent}>
       {/* ====== tag */}
       <Tag data-aos='fade-right'>Become an Agent</Tag>
       {/* ====== title */}

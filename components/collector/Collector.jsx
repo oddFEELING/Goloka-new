@@ -1,10 +1,19 @@
-import React from 'react';
+import React, { useId, useEffect } from 'react';
+import navStore from '../../global/nav.store';
 import IconBox from '../lib/icon_box/IconBox.component';
 
 // ======= component import -->
 import { Container, Tag, Title, Desc, StepArea } from './Collector.component';
 
 const Collector = () => {
+  const sc_collector = useId();
+  const set_collector = navStore((state) => state.setCollector);
+
+  // ======= set coolector id -->
+  useEffect(() => {
+    set_collector(sc_collector);
+  }, []);
+
   const IconBoxData = [
     {
       icon: `lucide:mouse-pointer-click`,
@@ -32,7 +41,7 @@ const Collector = () => {
     },
   ];
   return (
-    <Container>
+    <Container id={sc_collector}>
       {/* ====== tag */}
       <Tag data-aos='fade-right'>Get Actionable Insights</Tag>
       {/* ====== title */}

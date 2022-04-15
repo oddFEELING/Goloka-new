@@ -1,6 +1,7 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import navStore from '../../global/nav.store';
 import { Icon } from '@iconify/react';
 import useMobile from '../../hooks/useMobile';
 import useScroll from '../../hooks/useScroll';
@@ -17,6 +18,7 @@ import {
 
 const NavBar = () => {
   // ======= states  -->
+  const cur_state = navStore((state) => state);
   const [menuIsOpen, setMenuIsOpen] = useState(false);
 
   // ======= custom hooks -->
@@ -31,13 +33,17 @@ const NavBar = () => {
   const navLinks = [
     {
       text: `Collect Data`,
-      link: ``,
+      link: '#' + cur_state.sc_collector,
     },
     {
       text: `Become an Agent`,
-      link: ``,
+      link: '#' + cur_state.sc_agent,
     },
   ];
+
+  useEffect(() => {
+    console.log(cur_state);
+  }, [cur_state]);
 
   return (
     <Container scrolled={scrolled} mobile={isMobile}>
@@ -57,7 +63,11 @@ const NavBar = () => {
           <MobileNavBox isopen={menuIsOpen}>
             {navLinks.map((item, index) => {
               return (
-                <Link href={item.link} key={index} passHref>
+                <Link
+                  href={item.link !== null ? item.link : ''}
+                  key={index}
+                  passHref
+                >
                   <a className='link'>{item.text}</a>
                 </Link>
               );
@@ -69,7 +79,11 @@ const NavBar = () => {
           {/* ====== desktop nav */}
           {navLinks.map((item, index) => {
             return (
-              <Link href={item.link} key={index} passHref>
+              <Link
+                href={item.link !== null ? item.link : ''}
+                key={index}
+                passHref
+              >
                 <a className={scrolled ? 'link scroll' : 'link'}>{item.text}</a>
               </Link>
             );
