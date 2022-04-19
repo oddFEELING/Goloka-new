@@ -18,7 +18,9 @@ const Hero = () => {
 
   // ======= handle button click -->
   const formHandler = () => {
-    window.open('https://forms.gle/Fb6AbheVqbbuTvz58');
+    window.open(
+      'https://docs.google.com/forms/d/1gx09bXocZ37ctw4QrjJJiaHNSbJKZ0TWOt5CJcqTlDI/edit'
+    );
   };
   return (
     <Container>
